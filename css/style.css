@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "CenturyGothicRegular";
+    src: url("../fonts/CenturyGothicRegular/CenturyGothicRegular.eot");
+    src: url("../fonts/CenturyGothicRegular/CenturyGothicRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/CenturyGothicRegular/CenturyGothicRegular.woff") format("woff"),
+    url("../fonts/CenturyGothicRegular/CenturyGothicRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+body {
+    font-family:  "CenturyGothicRegular", sans-serif;
+    font-size: 14px;
+    max-width: 1920px;
+    margin: 9.8571rem auto;
+}
+.conteiner {
+    margin: 0 5rem;
+
+}
+/*----------------Header---------------------*/
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+/*----------------Social---------------------*/
+.social a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #c2d6eb;
+    color: rgb(252, 255, 255);
+    cursor: pointer;
+}
