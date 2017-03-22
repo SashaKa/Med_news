@@ -39,7 +39,8 @@ header{
     font-family: "Open Sans", sans-serif;
 }
 /*----------------Social---------------------*/
-.social a {
+.social-btn {
+    display: inline-block;
     text-decoration: none;
     width: 2rem;
     height: 2rem;
@@ -48,8 +49,10 @@ header{
     cursor: pointer;
     position: relative;
 }
-.social .fa {
-    font-size: 1.8rem;
+.social-btn .fa {
+    font-size: 1.2rem;
+    padding-top: 8px;
+    padding-left: 8px;
 }
 /*----------------user-block-----------------*/
 
@@ -66,7 +69,7 @@ header{
     font-size: 2rem;
 }
 .wrap-btn .fa {
-    padding-left: 10px;
+    padding-left: 11px;
     padding-top: 12px;
 }
 .message {
@@ -95,7 +98,7 @@ fieldset {
     border: none;
     background-color: #fff;
     color: #9bb0c4;
-    padding-right: 19rem;
+    padding-right: 19%;
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
     margin-left: 35%;
@@ -130,13 +133,213 @@ nav {
 .main-nav li {
     list-style: none;
     padding: 1.15rem;
+    padding-left: 0rem;
+    padding-right: 3rem;
 }
-
+.main-nav li:first-child {
+    padding-right: 0;
+}
 .main-link {
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
 }
+.main-link:hover {
+    color: #db7d0a;
+}
 .main-nav .fa {
     font-size: 2rem;
+}
+/*--------------------banner-------------------------*/
+.banner-wrap {
+
+    margin-top: 2.8rem;
+    margin-bottom: 2.6rem;
+    flex: 1 1 100%;
+}
+/*-------------------Breadcrumbs-------------------*/
+.breadcrumbs {
+
+    font-size: 1rem;
+    line-height: 1rem;
+}
+.bread-link {
+    color: #e7e7e7;
+    text-decoration: none;
+}
+.bread-link:hover {
+    color: #336799;
+}
+.bread-link:first-child:after {
+    content: ">";
+    color: #e7e7e7;
+}
+/*---------------------------Main-----------------*/
+.anatomic-wrap {
+    display: inline-block;
+    position: relative;
+}
+.wrap-list {
+    width: 27%;
+    position: absolute;
+    top: 7.2rem;
+    left: 65rem;
+}
+.anatomic-wrap img {
+    margin-left: 9%;
+}
+.title-anatomic {
+    font-family: "CenturyGothicRegular", sans-serif;
+    color: #676666;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    text-align: center;
+    margin-left: 28%;
+    display: inline-block;
+}
+.organs {
+    font-size: 1.1333rem;
+    font-family: "CenturyGothicRegular", sans-serif;
+    color: #999a9b;
+    line-height: 1.2rem;
+}
+.organs li {
+    color: #82b1e7;
+    list-style: square outside;
+    font-size: 1rem;
+    line-height: 1.8rem;
+}
+.organs-annotation {
+    font-size: 0.6667rem;
+    color: #717171;
+}
+.title-definition,
+.title-cure,
+.title-illnesses {
+    font-family: "CenturyGothicRegular", sans-serif;
+    line-height: 3.6667rem;
+    font-size: 2rem;
+    padding-left:  5rem;
+    width: 100%;
+    color: #fff;
+    display: inline-block;
+
+}
+.title-definition{
+    background: linear-gradient(to right, #50b2cb 50%, #9fd5e2 50%);
+}
+.liver-definition {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.definition-wrap {
+    width: 30%;
+    color: #565656;
+    padding-bottom: 3.1rem;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    position: relative;
+
+}
+/*--------------Corners------------------*/
+.title-organ::before,
+.title-organ::after,
+.definition::before,
+.definition::after  {
+    content: "";
+    position: absolute;
+    width: 5.66rem;
+    height: 5.66rem;
+
+}
+.title-organ::before{
+    top:0;
+    left:0;
+    border-top: 8px solid #aaccde;
+    border-left: 8px solid #aaccde;
+}
+.title-organ::after {
+    top:0;
+    right: 0;
+    border-top: 8px solid #aaccde;
+    border-right: 8px solid #aaccde;
+}
+.definition {
+    line-height: 1.5rem;
+    font-size: 1.3333rem;
+}
+.definition::before{
+    bottom: 0;
+    left:0;
+    border-bottom: 8px solid #aaccde;
+    border-left: 8px solid #aaccde;
+}
+.definition::after {
+    bottom: 0;
+    right: 0;
+    border-bottom: 8px solid #aaccde;
+    border-right: 8px solid #aaccde;
+}
+.title-organ {
+    font-size: 2.6667rem;
+    line-height: 2.8rem;
+}
+.title-cure {
+    background: linear-gradient(to right, #b69c97 50%, #d7c9c6 50%);
+}
+.doctors-wrap {
+    background: url(../img/doctor.jpg) no-repeat;
+    height: 35.8rem;
+    width: 100%;
+    background-size: cover;
+    background-position: left top;
+    margin-top: -42px;
+    position: relative;
+}
+.doctor-choice {
+    font-size: 3.8rem;
+    line-height: 3.66rem;
+    color: #fff;
+    background-color: rgba(84, 153, 206, 0.67);
+    width: 33%;
+    padding: 0.5rem;
+    padding-right: 2rem;
+    text-align: right;
+    padding-right: 7.7rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.doctors-wrap button {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    background-color: rgba(164, 174, 182, 0.89);
+    top: 43%;
+    border: none;
+    border-radius: 50%;
+}
+.doctors-wrap button:hover {
+    background-color: #63a9d9;
+}
+.left-btn {
+    left: 2rem;
+}
+.right-btn {
+    right: 2rem;
+}
+button .fa {
+    color: white;
+    font-size: 2rem;
+
+}
+.right-btn .fa {
+    padding-left: 0.4rem;
+}
+.left-btn .fa {
+    padding-right: 0.4rem;
+}
+.title-illnesses {
+    background: linear-gradient( to right, #8eae05 50%, #c1d376 50%);
 }
