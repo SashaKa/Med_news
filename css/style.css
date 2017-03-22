@@ -287,6 +287,7 @@ nav {
 }
 .title-cure {
     background: linear-gradient(to right, #b69c97 50%, #d7c9c6 50%);
+    margin-bottom: 0;
 }
 .doctors-wrap {
     background: url(../img/doctor.jpg) no-repeat;
@@ -294,7 +295,6 @@ nav {
     width: 100%;
     background-size: cover;
     background-position: left top;
-    margin-top: -42px;
     position: relative;
 }
 .doctor-choice {
@@ -340,6 +340,46 @@ button .fa {
 .left-btn .fa {
     padding-right: 0.4rem;
 }
+/*-------------------Illnesses block--------------*/
 .title-illnesses {
     background: linear-gradient( to right, #8eae05 50%, #c1d376 50%);
+    margin-bottom: 0;
+}
+
+.illnesses-list {
+    background: url(../img/steto.jpg) no-repeat, center;
+    background-size: cover;
+
+}
+.illness {
+    list-style: none;
+    width: 50%;
+    padding-bottom: 3.33rem;
+    padding-top: 4.5rem;
+    margin-left: 9%;
+    margin-top: 0;
+}
+.illness-link {
+    text-decoration: none;
+    color: #868686;
+    font-size: 1.2rem;
+    line-height: 3.66rem;
+    position: relative;
+}
+.illness-link:hover {
+    color: #687c15;
+    border-bottom: 1px solid #687c15;
+}
+.illness i {
+    display: none;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.illness li:hover i {
+    display: block;
+}
+.illness-btn {
+    color: #21786d;
+    border-bottom: 1px solid #21786d;
 }
