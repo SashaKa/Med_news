@@ -13,7 +13,7 @@ body {
     max-width: 1920px;
     margin: 9.8571rem auto;
 }
-.conteiner {
+.container {
     margin: 0 5rem;
 
 }
@@ -21,14 +21,122 @@ body {
 header{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+}
+.choice-city {
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.73rem;
+    color: #c0c0c0;
+}
+.city-choice {
+    border: none;
+    color: #336799;
+    border-bottom: 1px solid #336799;
+    font-size: 0.933rem;
+    font-family: "Open Sans", sans-serif;
 }
 /*----------------Social---------------------*/
 .social a {
     text-decoration: none;
-    padding: 10px;
+    width: 2rem;
+    height: 2rem;
     background-color: #c2d6eb;
     color: rgb(252, 255, 255);
     cursor: pointer;
+    position: relative;
+}
+.social .fa {
+    font-size: 1.8rem;
+}
+/*----------------user-block-----------------*/
+
+ .wrap-btn {
+    position: absolute;
+    height: 225px;
+    right: -60px;
+    top: 10px;
+}
+.wrap-btn div {
+    width: 55px;
+    height: 57px;
+    color: #eaf4d1;
+    font-size: 2rem;
+}
+.wrap-btn .fa {
+    padding-left: 10px;
+    padding-top: 12px;
+}
+.message {
+    background-color: #9ac81e;
+}
+.profile {
+    background-color: #0ad7db;
+}
+.time {
+    background-color: #db7d0a;
+}
+.search-wrap {
+    background-color: #92c4f4;
+}
+/*--------------search-form------------------*/
+.search {
+    flex: 1 1 100%;
+    background-color: #6699cc;
+}
+fieldset {
+    border:none;
+    padding: 1rem;
+}
+.input-field {
+    border-radius: 32rem;
+    border: none;
+    background-color: #fff;
+    color: #9bb0c4;
+    padding-right: 19rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    margin-left: 35%;
+    position: relative;
+}
+.search-btn {
+    position: absolute;
+    right: 26.2rem;
+    top: 4.3rem;
+    border-radius: 12px;
+    background-color: #336799;
+    border: none;
+    color: #fff;
+    padding: 0.3rem;
+}
+label[for=search] {
+    display: none;
+}
+/*------------------Menu-----------------------*/
+nav {
+    flex: 1 1 100%;
+}
+.main-nav {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background-color: #336799;
+    margin: 0;
+}
+.main-nav li {
+    list-style: none;
+    padding: 1.15rem;
+}
+
+.main-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+.main-nav .fa {
+    font-size: 2rem;
 }

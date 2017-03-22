@@ -10,9 +10,9 @@
     <title>Питание</title>
 </head>
 <body>
-    <header>
+    <header class="container">
         <a href="#" class="logo-link"><img src="img/Logo.png" alt="Mednews24"></a>
-        <div class="city-choice">
+        <div class="choice-city">
             <i class="fa fa-map-marker" aria-hidden="true"></i>
             <span class="title-choice">Выберите  город  и  регион</span>
             <select class="city-choice" name="city">
@@ -27,6 +27,30 @@
             <a class="fa fa-youtube" href="#"></a>
             <a class="fa fa-instagram"  href="#"></a>
         </section>
+        <form class="search" action="#" method="get">
+            <fieldset class="search-form">
+                <input class="input-field" id="search" type="search" name="search" placeholder=" Я ищу...">
+                <label for="search">Я ищу...</label>
+            </fieldset>
+            <button class="search-btn fa fa-search" type="submit">Найти</button>
+        </form>
+        <div class="wrap-btn">
+            <div class="message"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+            <div class="profile"><i class="fa fa-user-circle" aria-hidden="true"></i></div>
+            <div class="time"><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+            <div class="search-wrap"><i class="fa fa-search" aria-hidden="true"></i></div>
+        </div>
+        <nav>
+            <ul class="main-nav">
+                <li><a href="#" class="main-link fa fa-home"></a></li>
+                <li><a href="#" class="main-link">Новости </a></li>
+                <li><a href="#" class="main-link">Статьи</a></li>
+                <li><a href="#" class="main-link">Клиника</a></li>
+                <li><a href="#" class="main-link">Контакты  </a></li>
+                <li><a href="#" class="main-link">Разделы медицины</a></li>
+                <li><a href="#" class="main-link">Вопрос-ответ</a></li>
+            </ul>
+        </nav>
     </header>
     <main></main>
     <footer></footer>
