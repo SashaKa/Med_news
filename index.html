@@ -31,8 +31,8 @@
             <fieldset class="search-form">
                 <input class="input-field" id="search" type="search" name="search" placeholder=" Я ищу...">
                 <label for="search">Я ищу...</label>
+                <input class="search-btn " type="submit" value="Найти"></input>
             </fieldset>
-            <button class="search-btn fa fa-search" type="submit">Найти</button>
         </form>
         <div class="wrap-btn">
             <div class="message"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
@@ -43,16 +43,31 @@
         <nav>
             <ul class="main-nav">
                 <li><a href="#" class="main-link fa fa-home"></a></li>
-                <li><a href="#" class="main-link">Новости </a></li>
+                <li><a href="#" class="main-link">Новости</a></li>
                 <li><a href="#" class="main-link">Статьи</a></li>
                 <li><a href="#" class="main-link">Клиника</a></li>
-                <li><a href="#" class="main-link">Контакты  </a></li>
+                <li><a href="#" class="main-link">Контакты</a></li>
                 <li><a href="#" class="main-link">Разделы медицины</a></li>
                 <li><a href="#" class="main-link">Вопрос-ответ</a></li>
             </ul>
         </nav>
+        <div class="burger-menu">
+            <div class="burger">
+                <nav class="mobile-menu">
+                    <ul>
+                        <li><a href="" class="mobile-link">На главную</a></li>
+                        <li><a href="" class="mobile-link">Новости</a></li>
+                        <li><a href="" class="mobile-link">Статьи</a></li>
+                        <li><a href="" class="mobile-link">Клиника</a></li>
+                        <li><a href="" class="mobile-link">Контакты</a></li>
+                        <li><a href="" class="mobile-link">Разделы медицины</a></li>
+                        <li><a href="" class="mobile-link">Вопрос-ответ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
         <section class="banner-wrap">
-            <img class="banner"src="img/banner.jpg" alt="Ботокс выгодно" width="100%" height="165"/>
+            <img class="banner"src="img/banner.jpg" alt="Ботокс выгодно" width="1370" height="165"/>
         </section>
         <div class="breadcrumbs">
             <a href="#" class="bread-link">Главная </a>
@@ -94,7 +109,6 @@
         <section class="illnesses-list">
             <ul class="illness">
                 <li>
-                    <i class="fa fa-caret-right" aria-hidden="true"></i>
                     <a href="#" class="illness-link">Психосоматика сахарного диабета</a>
                 </li>
                 <li><a href="#" class="illness-link">Течение гепатита при сахарном диабете</a></li>
@@ -108,5 +122,19 @@
         </section>
     </main>
     <footer></footer>
+    <script type="text/javascript">
+        const hamburger = document.querySelector('.burger-menu')
+        const mobileMenu = document.querySelector ('.mobile-menu')
+
+        hamburger.addEventListener('click', () => {
+        if (!hamburger.classList.contains('menu-on')) {
+            hamburger.classList.add('menu-on')
+            mobileMenu.classList.add('mobile-menu-on')
+            } else if (hamburger.classList.contains('menu-on')) {
+            hamburger.classList.remove('menu-on')
+            mobileMenu.classList.remove('mobile-menu-on')
+            }
+        })
+    </script>
 </body>
 </html>
